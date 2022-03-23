@@ -1,0 +1,143 @@
+/* Estilos Globais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    padding: 15px 0;
+    background: #fff;
+}
+
+
+header .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+header .logo h1 {
+    color: #777;
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0;
+}
+
+header .logo h2 {
+    display: inline-block;
+    font-size: 16px;
+    color: #aaa;
+    font-weight: 300;
+    margin: 0;
+}
+
+header button {
+    background-color: transparent;
+    color: #AAAAAA;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+section.banner .carousel>img {
+    width: 100%;
+}
+
+section.banner .carousel {
+    margin: 50px 0;
+    position: relative;
+}
+
+section.banner .carousel .controls {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.banner .carousel .controls button {
+    background-color: rgba(141, 141, 141, 0.62);
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+section.banner .carousel .controls button img {
+    width: 12px;
+}
+
+section.lofts .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+section.lofts article {
+    width: 350px;
+    background-color: #EEE;
+}
+
+section.lofts article .thumb {
+    background-image: url(/img/img1.png);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.lofts article .info {
+    padding: 15px;
+}
+
+section.lofts article .info>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.lofts article .price {
+    font-size: 30px;
+    color: #888;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+section.lofts article .tag {
+    text-transform: uppercase;
+    padding: 3px 15px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 30px;
+}
+
+section.lofts article .tag.tag-new {
+    background-color: #51d275;
+}
+
+section.lofts article .tag.tag-sale {
+    background-color: #dc9730;
+}
